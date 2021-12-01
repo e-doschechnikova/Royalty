@@ -121,15 +121,38 @@
           СБ-ВС 9:00-03:00
         </p>
         <a href="map.html">Как добраться</a>
-        <a href="contacts.html">обратная связь</a>
+        <a href="contacts.html">Обратная связь</a>
       </section>
       <section>
         <h2>Забронировать стол</h2>
         <p>
           Укажите желаемую дату и время. Наш менеджер свяжется с Вами для
-          подтверждения брони
+          подтверждения брони.
         </p>
-        <!--здесь будет форма-->
+        <form action="" method="post">
+          <p>
+            Дата
+            <input type="date" name="date" value="10.12.2021" />
+          </p>
+          <p>
+            Время
+            <input type="time" name="time" value="20:00" />
+          </p>
+          <p>
+            Ваше имя
+            <input type="text" name="name" value="" placeholder="Василиса" />
+          </p>
+          <p>
+            Телефон
+            <input
+              type="tel"
+              name="phone"
+              value=""
+              placeholder="+7 (999) 333-63-33"
+            />
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -156,13 +179,45 @@
     <section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!--здесь будет форма-->
+      <form action="" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input
+            id="user-login"
+            type="email"
+            name="login"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input
+            id="user-password"
+            type="password"
+            name="password"
+            placeholder="* * * * * * * * * * * * * *"
+          />
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" /> Запомните меня</label
+          >
+          <a href="#">Я забыл(а) пароль!</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
     <section>
       <h2>Как добраться</h2>
-
-      <!--здесь будет форма-->
+      <p>
+        <img
+          src="/img/map.jpg"
+          width="780"
+          height="560"
+          alt="Ресто-бар находится по адресу г. Санкт-Петербург, ул. Малая Морская, 24"
+        />
+      </p>
       <button type="button">Закрыть</button>
     </section>
   </body>
