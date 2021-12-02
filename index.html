@@ -7,12 +7,12 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
             src="/img/logorest.png"
             width="368"
@@ -20,26 +20,26 @@
             alt="Логотип ресто-бара royalty"
           />
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
-            <button type="button">Войти</button>
+            <a class="login-link" href="login.html"> Войти </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Ресто-бар "royalty"</h1>
+    <main class="container">
+      <h1 class="visually-hidden">Ресто-бар "royalty"</h1>
       <section>
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>Обслуживание</h3>
             <p>
               Для Вас мы создали изысканный интерьер в теплых тонах. Талантливые
@@ -49,7 +49,7 @@
               и спиртных напитков.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h4>Кухня</h4>
             <p>
               В royalty можно отведать лучшее в традиционной и европейской
@@ -61,7 +61,7 @@
               семьи и самых близких людей.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <h5>Мероприятия</h5>
             <p>
               В элегантных и просторных залах мы предлагаем гостям организацию
@@ -76,42 +76,43 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Новости</h2>
-        <ul>
-          <li>
-            <p>
-              Друзья, приятные новости для вас! Каждому гостю мы дарим
-              серебряную подвеску Sokolov.
-            </p>
-            <time datetime="2021-11-12">12 ноября</time>
-          </li>
-          <li>
-            <p>
-              Спешим поделиться важным событием, мы открыли свою собственную
-              сыроварню и в честь этого мы запустили сырное меню.
-            </p>
-            <time datetime="2021-11-21">21 ноября</time>
-          </li>
-        </ul>
-        <a href="news.html">Все новости</a>
-      </section>
-      <section>
-        <h2>Фогалерея</h2>
-        <figure>
-          <a href="#">
-            <img
-              src="/img/photorest3.jpg"
-              width="286"
-              height=""
-              alt="Интерьер"
-            />
-          </a>
-        </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
-      </section>
-
+      <div class="index-columns">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>
+                Друзья, приятные новости для вас! Каждому гостю мы дарим
+                серебряную подвеску Sokolov.
+              </p>
+              <time datetime="2021-11-12">12 ноября</time>
+            </li>
+            <li class="news-item">
+              <p>
+                Спешим поделиться важным событием, мы открыли свою собственную
+                сыроварню и в честь этого мы запустили сырное меню.
+              </p>
+              <time datetime="2021-11-21">21 ноября</time>
+            </li>
+          </ul>
+          <a href="news.html">Все новости</a>
+        </section>
+        <section class="gallery">
+          <h2>Фогалерея</h2>
+          <figure class="gallery-content">
+            <a href="#">
+              <img
+                src="/img/photorest3.jpg"
+                width="286"
+                height=""
+                alt="Интерьер"
+              />
+            </a>
+          </figure>
+          <button class="button-gall-back" type="button">Назад</button>
+          <button class="button-gall-next" type="button">Вперед</button>
+        </section>
+      </div>
       <section>
         <h2>Контактная информация</h2>
         <p>

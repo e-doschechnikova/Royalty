@@ -1,17 +1,82 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'PT Sans Narrow', sans-serif;
-    
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
+  font-family: "PT Sans Narrow", sans-serif;
 
-    background-color: #000;
-    background-position: top center;
-    background-repeat: no-repeat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #000;
+  background-image: url("/img/main.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
 }
 
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+
+  background-color: #000;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #fff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+.feature-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-columns {
+  color: black;
+
+  background-color: #f8f5f2;
+  background-position: 0 0;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery-content {
+background-color: #ccc;
+border: 7px solid #fff;
+}
