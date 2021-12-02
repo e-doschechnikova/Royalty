@@ -14,9 +14,22 @@ body {
   background-image: url("/img/main.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 a {
   text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: black;
+  border: none;
 }
 
 .main-navigation {
@@ -73,10 +86,100 @@ a {
 }
 
 .news-item time {
-    text-transform: none;
+  text-transform: none;
 }
 
 .gallery-content {
-background-color: #ccc;
-border: 7px solid #fff;
+  background-color: #ccc;
+  border: 7px solid #fff;
 }
+
+.appointment-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000;
+}
+/* TODO add input focus */
+
+.main-footer {
+  color: #fff;
+
+  background-color: #212121;
+}
+
+.footer-contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.main-footer a:hover,
+.main-footer a:focus {
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #fff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: black;
+
+  background-color: #fff;
+}
+
+.modal {
+  color: #000;
+
+  background-color: #f8f3f0;
+}
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.restore {
+  color: #000;
+
+  text-decoration: none;
+}
+
+.restore:hover {
+  text-decoration: underline;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+
+
+
