@@ -20,23 +20,27 @@
             alt="Логотип ресто-бара royalty"
           />
         </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <a class="login-link" href="login.html"> Войти </a>
-          </li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="price.html">Прайс-лист</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a class="login-link" href="login.html"> Войти </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Ресто-бар "royalty"</h1>
-      <section>
+      <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="feature-item">
@@ -139,21 +143,38 @@
             подтверждения брони.
           </p>
           <form action="" method="post">
-            <p class="appointment-item"> <label for="appointment-date">
-              Дата</label>
-              <input id="appointment-date" type="date" name="date" value="10.12.2021" />
+            <p class="appointment-item">
+              <label for="appointment-date"> Дата</label>
+              <input
+                id="appointment-date"
+                type="date"
+                name="date"
+                value="10.12.2021"
+              />
             </p>
-            <p class="appointment-item"> <label for="appointment-time">
-              Время</label>
-              <input id="appointment-time" type="time" name="time" value="20:00" />
+            <p class="appointment-item">
+              <label for="appointment-time"> Время</label>
+              <input
+                id="appointment-time"
+                type="time"
+                name="time"
+                value="20:00"
+              />
             </p>
-            <p class="appointment-item"> <label for="appointment-name">
-              Ваше имя</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Василиса" />
+            <p class="appointment-item">
+              <label for="appointment-name"> Ваше имя</label>
+              <input
+                id="appointment-name"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Василиса"
+              />
             </p>
-            <p class="appointment-item"> <label for="appointment-phone">
-              Телефон</label>
-              <input id="appointment-phone"
+            <p class="appointment-item">
+              <label for="appointment-phone"> Телефон</label>
+              <input
+                id="appointment-phone"
                 type="tel"
                 name="phone"
                 value=""
@@ -166,25 +187,27 @@
       </div>
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">
-        Ресто-бар "royalty" <br />
-        Адрес: г. Санкт-Петербург, ул. Малая Морская, 24 <br />
-        <a href="map.html">Как добраться</a> <br />
-        Телефон: +7 (999) 999-69-99 <br />
-        info@cristal_resort.com
-      </p>
-      <div class="footer-social">
-        <p>Давайте дружить!</p>
-        <ul  >
-          <li><a class="social-button" href="#"> Вконтакте</a></li>
-          <li><a class="social-button" href="#"> Facebook</a></li>
-          <li><a class="social-button" href="#"> Instagram</a></li>
-        </ul>
+      <div class="container">
+        <p class="footer-contacts">
+          Ресто-бар "royalty" <br />
+          Адрес: г. Санкт-Петербург, ул. Малая Морская, 24 <br />
+          <a href="map.html">Как добраться</a> <br />
+          Телефон: +7 (999) 999-69-99 <br />
+          info@cristal_resort.com
+        </p>
+        <div class="footer-social">
+          <p>Давайте дружить!</p>
+          <ul>
+            <li><a class="social-button" href="#"> Вконтакте</a></li>
+            <li><a class="social-button" href="#"> Facebook</a></li>
+            <li><a class="social-button" href="#"> Instagram</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Разработано:</b>
+          <a href="https://github.com/e-doschechnikova">E.DOSCHECHNIKOVA</a>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <b>Разработано:</b>
-        <a href="https://github.com/e-doschechnikova">E.DOSCHECHNIKOVA</a>
-      </p>
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
@@ -192,7 +215,8 @@
       <form class="login-form" action="" method="post">
         <p>
           <label class="visially-hidden" for="user-login">Логин</label>
-          <input class="login-icon-user"
+          <input
+            class="login-icon-user"
             id="user-login"
             type="email"
             name="login"
@@ -201,7 +225,8 @@
         </p>
         <p>
           <label class="visially-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password"
+          <input
+            class="login-icon-password"
             id="user-password"
             type="password"
             name="password"
@@ -210,8 +235,8 @@
         </p>
         <p class="login-password-info">
           <label class="login-checkbox">
-            <input type="checkbox" name="remember" /></label
-          >
+            <input type="checkbox" name="remember"
+          /></label>
           <span class="checkbox-indicator">Запомнить меня</span>
           <a class="restore" href="#">Я забыл(а) пароль!</a>
         </p>

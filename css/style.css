@@ -19,6 +19,9 @@ body {
 a {
   text-decoration: none;
 }
+.main-header {
+  margin-bottom: 75px;
+}
 
 .button {
   font: inherit;
@@ -32,6 +35,12 @@ a {
   border: none;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
@@ -40,9 +49,53 @@ a {
   background-color: #000;
 }
 
-.site-navigation,
-.user-navigation {
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+}
+
+.visually-hidden {
+  text-align: center;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  color: #fff;
+}
+
+.main-navigation-wrapper,
+.container-d {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+}
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features {
+  margin-bottom: 80px;
 }
 
 .site-navigation a,
@@ -58,22 +111,68 @@ a {
 }
 
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  min-height: 170px;
 }
 
 .feature-item {
+  margin: 0;
+  padding: 0;
+  width: 300px;
   text-align: center;
 }
 .feature-item h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feature-item h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feature-item h5 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 42px;
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: black;
 
   background-color: #f8f5f2;
   background-position: 0 0;
+}
+
+.news {
+  width: 380px;
+}
+.gallery {
+  width: 300px;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
+  text-align: justify;
 }
 
 .index-columns h2 {
@@ -103,9 +202,21 @@ a {
 /* TODO add input focus */
 
 .main-footer {
+  padding: 60px 0s;
+  margin-top: 65px;
   color: #fff;
 
   background-color: #212121;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -128,6 +239,7 @@ a {
 }
 
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 
@@ -140,6 +252,9 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -179,7 +294,3 @@ a {
   background-color: #f9f6f3;
   border: 2px solid #000;
 }
-
-
-
-
