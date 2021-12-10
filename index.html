@@ -294,15 +294,16 @@
       </div>
     </footer>
     <section class="modal modal-login">
+      <button class="modal-close" type="button"></button>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
+      <p class="modal-description">Введите свой логин и пароль.</p>
       <form class="login-form" action="" method="post">
         <p>
           <label class="visially-hidden" for="user-login">Логин</label>
           <input
             class="login-icon-user"
             id="user-login"
-            type="email"
+            type="text"
             name="login"
             placeholder="email@example.com"
           />
@@ -317,16 +318,19 @@
             placeholder="* * * * * * * * * * * * * *"
           />
         </p>
-        <p class="login-password-info">
+        <p class="login-help">
           <label class="login-checkbox">
-            <input type="checkbox" name="remember"
-          /></label>
-          <span class="checkbox-indicator">Запомнить меня</span>
+            <input class="visially-hidden"  type="checkbox" name="remember" />
+            <span class="checkbox-indicator"></span>
+            Запомнить меня
+          </label>
           <a class="restore" href="#">Я забыл(а) пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <section class="modal modal-map">
       <h2 class="visially-hidden">Как добраться</h2>
