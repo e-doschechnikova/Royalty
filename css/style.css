@@ -109,6 +109,17 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 26px 20px;
+  color: #ffffff;
+}
 
 .container {
   width: 940px;
@@ -126,6 +137,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .user-navigation {
+  display: flex;
   width: 140px;
   margin: 0;
   padding: 0;
@@ -142,19 +154,12 @@ input[type="radio"].visually-hidden {
   color: #fff;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #242424;
-}
-
-.user-navigation.login-link {
+.user-navigation .login-link {
   position: relative;
   padding-left: 50px;
 }
 
-.login-link::before {
+.user-navigation .login-link::before {
   content: "";
 
   position: absolute;
@@ -171,10 +176,17 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.login-link:hover::before,
-.login-link:focus::before,
-.login-link:active::before {
+.user-navigation .login-link:hover::before,
+.user-navigation .login-link:focus::before,
+.user-navigation .login-link:active::before {
   opacity: 1;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
 }
 
 .features {
@@ -633,10 +645,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.login-checkbox:hover,
+/* .login-checkbox:hover,
 .login-checkbox:focus{
   color: #663d15;
-}
+} */
 
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
@@ -649,21 +661,30 @@ input[type="radio"].visually-hidden {
   border: 2px solid #000;
 }
 
-.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;}
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
-  .login-checkbox input[type="checkbox"] + .checkbox-indicator::before,
-  .login-checkbox input[type="checkbox"] + .checkbox-indicator::after{
-    content: "";
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
 
-    position: absolute;
-    top: 8px;
-    left: 1px;
+  position: absolute;
+  top: 8px;
+  left: 1px;
 
-    width: 15px;
-    height: 2px;
+  width: 15px;
+  height: 2px;
 
-    background-color: #000
-  }
+  background-color: #000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
