@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -12,12 +13,19 @@ body {
   min-height: 1122px;
   max-width: 1750px;
 
-  background-color: rgb(0, 0, 0);
+  /*background-color: rgb(0, 0, 0);
   background-image: url("/img/main.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%;*/
 }
+
+.inner-page {
+  color: #000;
+
+  background-color: #f8f5f2;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,7 +97,7 @@ input[type="radio"] .visually-hidden {
   background-color: #000;
 }
 
-.main-navigation container{
+.main-navigation container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,12 +408,103 @@ input[type="radio"] .visually-hidden {
   margin-left: 0;
 }
 
+.product-info li {
+  position: relative;
+
+  padding-left: 23px;
+}
+
+.product-info li::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 2px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+
+  transform: rotate(45deg);
+}
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.inner-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000;
+}
+
+.inner-content .big-heading {
+  display: flex;
+  align-content: center;
+
+  margin-top: 55px;
+  margin-bottom: 65px;
+
+  font-style: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  background: rgba(255, 45, 85, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 45, 85);
+}
+
+.big-heading::before,
+.big-heading::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 2px;
+
+  background: #000;
+}
+
 .main-footer {
   padding: 60px 0s;
   margin-top: 65px;
   color: #fff;
 
   background-color: #212121;
+}
+
+.inner-content .main-footer {
+  margin-top: 45px;
 }
 
 .main-footer .container {
