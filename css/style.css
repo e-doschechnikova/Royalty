@@ -27,9 +27,9 @@ img {
   height: auto;
 }
 
-.visially-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"] .visually-hidden,
+input[type="radio"] .visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -518,16 +518,6 @@ input[type="radio"].visually-hidden {
   line-height: 42px;
 }
 
-.restore {
-  color: #000;
-
-  text-decoration: none;
-}
-
-.restore:hover {
-  text-decoration: underline;
-}
-
 .modal {
   position: fixed;
 
@@ -540,6 +530,8 @@ input[type="radio"].visually-hidden {
 .modal-login {
   top: 120px;
   left: 50%;
+
+ display: none;
 
   width: 300px;
   margin-left: -230px;
@@ -645,10 +637,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-/* .login-checkbox:hover,
-.login-checkbox:focus{
+.login-checkbox:hover,
+.login-checkbox:focus {
   color: #663d15;
-} */
+}
 
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
@@ -688,3 +680,21 @@ input[type="radio"].visually-hidden {
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
 }
+
+.restore {
+  color: #000;
+
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+
+.login-form .button {
+  width: 100%;
+  margin-left: 0;
+}
+
+
