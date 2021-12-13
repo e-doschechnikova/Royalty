@@ -41,8 +41,8 @@ body {
 
   order: 0;
 
-  width: 90px;
-  height: 15px;
+  width: 60px;
+  height: 25px;
 }
 
 .inner-page .user-navigation {
@@ -552,14 +552,14 @@ input[type="radio"] .visually-hidden {
   margin-bottom: 30px;
 
   font-size: 24px;
-  line-height: 30px;
+  line-height: 24px;
 }
 
 .inner-content h3 {
   margin-top: 60px;
   margin-bottom: 30px;
 
-  font-size: 20px;
+  font-size: 24px;
   line-height: 24px;
 }
 
