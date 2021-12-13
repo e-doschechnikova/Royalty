@@ -474,7 +474,7 @@ input[type="radio"] .visually-hidden {
   margin-top: 55px;
   margin-bottom: 65px;
 
-  font-style: 48px;
+  font-size: 48px;
   line-height: 48px;
   text-align: center;
 
@@ -494,6 +494,42 @@ input[type="radio"] .visually-hidden {
   align-content: center;
 
   background: #000;
+}
+
+.big-heading::before {
+  margin-right: 25px;
+}
+
+.big-heading::after {
+  margin-left: 25px;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+  transform: rotate(45deg);
 }
 
 .main-footer {
