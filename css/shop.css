@@ -17,6 +17,8 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;*/
+
+  user-select: none;
 }
 
 .container {
@@ -685,23 +687,117 @@ input[type="radio"] .visually-hidden {
   margin-right: calc(100% - 460px);
 }
 
-.catalog-columns{
+.catalog-columns {
   display: flex;
   justify-content: space-between;
 }
 
+.filter {
+  width: 220px;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+  border: none;
+}
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+
+
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter legend {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+
+  line-height: 30px;
+}
+
+.filter-option {
+  margin-bottom: 15px;
+  padding-left: 43px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -43px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000;
+}
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: -39px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url(/svg/cross.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -43px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+.filter-input:disabled + label {
+  color: #000;
+  opacity: 0.3;
+}
 
 .catalog {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-/*.filter-input-checkbox{
-  position: relative;
-
-  cursor: pointer;
-}*/
 
 .main-footer {
   padding: 60px 0s;
