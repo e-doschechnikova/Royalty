@@ -834,10 +834,12 @@ input[type="radio"] .visually-hidden {
   box-shadow: 5px 0 25px rgba(0, 1, 1, 0.3);
 }
 
-.catalog-item h3 {
+.catalog-item h3, 
+.product-manufacture {
   order: 1;
 
-  margin: 15px 16px;
+ text-align: center;
+ 
   font-size: 16px;
 
   line-height: 18px;
@@ -847,8 +849,6 @@ input[type="radio"] .visually-hidden {
 
 .catalog-category {
   display: block;
-
-  text-transform: none;
 }
 
 .catalog-item img {
