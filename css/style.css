@@ -74,6 +74,7 @@ input[type="radio"] .visually-hidden {
 .button:disabled {
   cursor: default;
   opacity: 0.5;
+
   background-color: #000;
 }
 
@@ -86,30 +87,31 @@ input[type="radio"] .visually-hidden {
   line-height: 20px;
   color: #fff;
 
-  background-color: #000;
 }
 
-.main-navigation container{
+.main-navigation container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
 
-  background-color: #000;
+  color: #fff;
 }
 
 .main-header-logo {
   order: 2;
-  width: 368px;
-  height: 153px;
+
+  width: 200px;
+  height: 100px;
 }
 
 .main-navigation-wrapper {
   width: 100%;
   margin-bottom: 60px;
+
+  background-color: #000;
 }
 
 .visually-hidden {
@@ -130,11 +132,13 @@ input[type="radio"] .visually-hidden {
 .main-navigation a {
   display: block;
   padding: 26px 20px;
+
   color: #ffffff;
 }
 
 .container {
   width: 940px;
+
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -142,7 +146,9 @@ input[type="radio"] .visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
+
   width: 620px;
+
   margin: 0;
   padding: 0;
 
@@ -150,7 +156,9 @@ input[type="radio"] .visually-hidden {
 }
 .user-navigation {
   display: flex;
+
   width: 140px;
+
   margin: 0;
   padding: 0;
 
@@ -318,7 +326,7 @@ input[type="radio"] .visually-hidden {
   border: 7px solid #fff;
 }
 .gallery-content img {
-  width: 264px;
+  width: 300px;
   height: 164px;
 }
 
