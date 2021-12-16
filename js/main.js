@@ -1,7 +1,7 @@
 var link = document.querySelector(".login-link");
 var popup = document.querySelector(".modal-login");
-var close = document.querySelector(".modal-close");
-var login = popup.querySelector("[name=login]" );
+var login = popup.querySelector("[name=login]");
+var closePopup = document.querySelector(".modal-close");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -9,7 +9,7 @@ link.addEventListener("click", function (evt) {
   login.focus();
 });
 
-close.addEventListener("click", function (evt) {
+closePopup.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
 });
