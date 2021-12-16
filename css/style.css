@@ -86,7 +86,6 @@ input[type="radio"] .visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-
 }
 
 .main-navigation container {
@@ -528,23 +527,9 @@ input[type="radio"] .visually-hidden {
   background-color: #fff;
 }
 
-.modal {
-  color: #000;
-
-  background-color: #f8f3f0;
-}
 .modal h2 {
   font-size: 30px;
   line-height: 42px;
-}
-
-.modal {
-  position: fixed;
-
-  color: #000;
-
-  background-color: #f8f3f0;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-login {
@@ -570,6 +555,16 @@ input[type="radio"] .visually-hidden {
   border: 0;
 
   cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+
+  color: #000;
+
+  background-color: #f8f3f0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-close::before,
@@ -604,6 +599,10 @@ input[type="radio"] .visually-hidden {
 .modal-description {
   margin: 0;
   margin-bottom: 10px;
+}
+
+.modal-show {
+  display: block;
 }
 
 .login-form p {
