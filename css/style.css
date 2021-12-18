@@ -48,7 +48,8 @@ input[type="radio"] .visually-hidden {
   margin-bottom: 75px;
 }
 
-.button {
+.button,
+.button-map {
   display: inline-block;
   margin-left: 16px;
   padding: 10px 30px;
@@ -601,10 +602,6 @@ input[type="radio"] .visually-hidden {
   margin-bottom: 10px;
 }
 
-.modal-show {
-  display: block;
-}
-
 .login-form p {
   margin: 0;
   margin-bottom: 10px;
@@ -731,4 +728,44 @@ input[type="radio"] .visually-hidden {
 
 .modal-map p {
   margin: 0;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-close-map {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close-map::before,
+.modal-close-map::after {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  top: 10px;
+  left: 2px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+}
+
+.modal-close-map::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-map::after {
+  transform: rotate(-45deg);
 }

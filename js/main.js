@@ -7,6 +7,9 @@ var form = popup.querySelector("form");
 var storage = localStorage.getItem("login");
 var isStorageSupport = true;
 var storage = "";
+var mapLink = document.querySelector(".button-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close-map");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -41,3 +44,13 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
