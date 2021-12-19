@@ -10,6 +10,7 @@ var storage = "";
 var mapLink = document.querySelector(".button-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close-map");
+var footerMap = document.querySelector(".footer-map");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -53,4 +54,9 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
+});
+
+footerMap.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.add("modal-show");
 });
