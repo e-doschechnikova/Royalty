@@ -60,3 +60,12 @@ footerMap.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("modal-show");
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    }
+  }
+});
