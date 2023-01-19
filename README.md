@@ -15,8 +15,8 @@
 <br>
 <div align="center">
 
-## Для лучшей презентации сайта и его работы ниже показываю скриншоты и гифки:
-## For the best presentation of the site and its work, I show screenshots and gifs below:
+## Для лучшей презентации сайта и его работы ниже показываю скриншоты и гифки: <br/> For the best presentation of the site and its work, I show screenshots and gifs below:
+
   <br>
   <br>
  <img src="https://github.com/e-doschechnikova/royalty/blob/main/intro/main-scrnli.png?raw=true" />
